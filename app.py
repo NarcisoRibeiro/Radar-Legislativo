@@ -10,7 +10,7 @@ import plotly.express as px
 
 # Configurações da página
 st.set_page_config(
-    page_title="Mapa Temático do Parlamento",
+    page_title="",
     layout="wide",
     initial_sidebar_state="expanded"    
 )
