@@ -16,7 +16,7 @@ st.set_page_config(
 )
 
 # Carregar DataFrame
-df = pd.read_csv(r"C:\Users\macie\pls_2000_2025_unificado_com_tema_corrigido_final-gpt4o.csv")
+df = pd.read_csv("pls_2000_2025_unificado_com_tema_corrigido_final-gpt4o.csv")
 
 # Renomear tema_nova para tema
 if 'tema_nova' in df.columns:
