@@ -10,7 +10,7 @@ import plotly.express as px
 
 # Configurações da página
 st.set_page_config(
-    page_title="Radar Legislativo",
+    page_title="Mapa Temático do Parlamento",
     layout="wide",
     initial_sidebar_state="expanded"
 )
@@ -70,7 +70,7 @@ df_filtro = df[
     df['autor'].isin(autores_selecionados)
 ]
 
-st.title("📊 Radar Legislativo: Análise Temática dos Projetos de Lei")
+st.title("📊 Análise Temática dos Projetos de Lei")
 st.markdown(
     """
     > Explore a produção legislativa de maneira visual, filtrando por ano, tema e autor.  
