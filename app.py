@@ -11,11 +11,12 @@ import plotly.express as px
 # Configurações da página
 st.set_page_config(
     page_title="Mapa Temático do Parlamento",
-    st.title("Mapa Temático do Parlamento"),
     layout="wide",
     initial_sidebar_state="expanded"    
-
 )
+
+st.title("Mapa Temático do Parlamento")
+
 
 # Carregar DataFrame
 df = pd.read_csv("pls_2000_2025_unificado_com_tema_corrigido_final-gpt4o.csv")
