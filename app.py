@@ -15,7 +15,7 @@ st.set_page_config(
     initial_sidebar_state="expanded"    
 )
 
-st.title("Mapa Temático do Parlamento")
+# st.title("Mapa Temático do Parlamento")
 
 
 # Carregar DataFrame
