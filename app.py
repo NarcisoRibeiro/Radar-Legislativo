@@ -67,7 +67,7 @@ else:
 df_filtro = df[
     df['ano'].isin(anos) &
     df['tema'].isin(temas) &
-    df['autor'].isin(autores)
+    df['autor'].isin(autores_selecionados)
 ]
 
 st.title("📊 Radar Legislativo: Análise Temática dos Projetos de Lei")
