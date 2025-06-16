@@ -52,11 +52,17 @@ temas = st.sidebar.multiselect(
     default=sorted(df['tema'].unique())
 )
 
-autores = st.sidebar.multiselect(
-    "Autor",
-    sorted(df['autor'].unique()),
-    default=sorted(df['autor'].unique())
-)
+todos_autores = st.sidebar.checkbox("Selecionar todos os autores", value=True)
+
+if todos_autores:
+    autores_selecionados = sorted(df['autor'].unique())
+else:
+    autores_selecionados = st.sidebar.multiselect(
+        "Autor",
+        options=sorted(df['autor'].unique()),
+        help="Digite para filtrar autores"
+    )
+
 
 df_filtro = df[
     df['ano'].isin(anos) &
